@@ -17,6 +17,7 @@
 		BD66C95B1B9B87F5026E55F59D87A32D /* Pods-StepProgressBar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91FBD2AEB6DFCC3DC3DD3ECAFD4E1359 /* Pods-StepProgressBar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C09F1B885867F51176DA129263E4F5AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		D88E27ED2E9CB1F4811DA050D42B0FE0 /* Pods-StepProgressBar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFAC99944D1DD2508028674894F1639F /* Pods-StepProgressBar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCADAE801F8CF491004AFB66 /* NavigationController+StepProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADAE7E1F8CE508004AFB66 /* NavigationController+StepProgressBar.swift */; };
 		FEF23F41971F1CD547A8281B95F27F50 /* StepProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28231C800B449EEDDB64EAB80A9322F3 /* StepProgressBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		D494E23CE6E159F29411123C33B1A8A6 /* Pods-StepProgressBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StepProgressBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D50C9863EFA17FC2B245A8528EAFDD8A /* Pods-StepProgressBar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StepProgressBar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DCADAE7E1F8CE508004AFB66 /* NavigationController+StepProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationController+StepProgressBar.swift"; sourceTree = "<group>"; };
 		DCF5E86715E203A2D90AB5925F05C82A /* StepProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = StepProgressBar.modulemap; sourceTree = "<group>"; };
 		F6E9EBB7C30108921F7913F10BC7C2FF /* Pods-StepProgressBar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-StepProgressBar_Example.modulemap"; sourceTree = "<group>"; };
 		F78BFE24DC89041A246E8E7B08D98F69 /* Pods-StepProgressBar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-StepProgressBar_Tests.modulemap"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				28231C800B449EEDDB64EAB80A9322F3 /* StepProgressBar.swift */,
+				DCADAE7E1F8CE508004AFB66 /* NavigationController+StepProgressBar.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCADAE801F8CF491004AFB66 /* NavigationController+StepProgressBar.swift in Sources */,
 				08AABE0883B273D725B26BC5A628D27E /* StepProgressBar-dummy.m in Sources */,
 				FEF23F41971F1CD547A8281B95F27F50 /* StepProgressBar.swift in Sources */,
 			);

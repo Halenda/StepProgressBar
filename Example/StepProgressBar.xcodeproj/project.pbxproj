@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		44E6F7DCDE62D8E686DE8587 /* Pods_StepProgressBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8298BA8BEE37A73B687B52 /* Pods_StepProgressBar_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* ViewProgressBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewProgressBarViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A7FB4312E75208A78E707B7F /* Pods_StepProgressBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1E778C0D73B4382D8F2D67 /* Pods_StepProgressBar_Example.framework */; };
+		DCADAE821F8D0AB1004AFB66 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADAE811F8D0AB1004AFB66 /* SetupViewController.swift */; };
+		DCADAE841F8D0BAB004AFB66 /* NavigationProgressBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADAE831F8D0BAB004AFB66 /* NavigationProgressBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +36,7 @@
 		607FACD01AFB9204008FA782 /* StepProgressBar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepProgressBar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* ViewProgressBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProgressBarViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		A4D57D174C76C8BAD98F3521 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		ABD031DA0790E8A21097076A /* Pods-StepProgressBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepProgressBar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepProgressBar_Example/Pods-StepProgressBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BAD2A3C0432DD6A90369D3EA /* StepProgressBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StepProgressBar.podspec; path = ../StepProgressBar.podspec; sourceTree = "<group>"; };
+		DCADAE811F8D0AB1004AFB66 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		DCADAE831F8D0BAB004AFB66 /* NavigationProgressBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationProgressBarViewController.swift; sourceTree = "<group>"; };
 		DE1E778C0D73B4382D8F2D67 /* Pods_StepProgressBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepProgressBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2480773D188988A335EB781 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FE7441675C6786AD1DF1B8D6 /* Pods-StepProgressBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepProgressBar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepProgressBar_Example/Pods-StepProgressBar_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,7 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD71AFB9204008FA782 /* ViewProgressBarViewController.swift */,
+				DCADAE831F8D0BAB004AFB66 /* NavigationProgressBarViewController.swift */,
+				DCADAE811F8D0AB1004AFB66 /* SetupViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -365,7 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* ViewProgressBarViewController.swift in Sources */,
+				DCADAE841F8D0BAB004AFB66 /* NavigationProgressBarViewController.swift in Sources */,
+				DCADAE821F8D0AB1004AFB66 /* SetupViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

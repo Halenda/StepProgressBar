@@ -10,17 +10,7 @@ import UIKit
 
 @IBDesignable
 open class StepProgressBar: UIView {
-    
-    // MARK: Public API
-    
-    open func previous() {
-        progress = max(0, progress - 1)
-    }
-    
-    open func next() {
-        progress = min(stepsCount, progress + 1)
-    }
-    
+    //MARK: - Inspectable properties
     // Progress color. Default is blue.
     @IBInspectable
     open var color: UIColor = UIColor.blue {
@@ -72,39 +62,42 @@ open class StepProgressBar: UIView {
         }
     }
     
-    // Private implementation
-    
-    private var _cornerRadius: CGFloat = 0 {
+    //MARK: - Private variables
+    fileprivate var _cornerRadius: CGFloat = 0 {
         didSet {
             setNeedsDisplay()
         }
     }
     
-    private var progressWidth: CGFloat {
-        return (frame.width - CGFloat(stepsCount - 1) * stepsOffset) / CGFloat(stepsCount)
+    fileprivate var progressWidth: CGFloat {
+        return (frame.width - CGFloat(stepsCount + 1) * stepsOffset) / CGFloat(stepsCount)
     }
     
+    //MARK: - Drawing
     override open func draw(_ rect: CGRect) {
         super.draw(rect)
         
         // set start point of subview
-        var xValue: CGFloat = 0
+        var xValue: CGFloat = 0 + stepsOffset
         
         // loop the all step views, set possition and color
         for index in 1...stepsCount {
-            
             let path = UIBezierPath(roundedRect: CGRect(x: xValue, y: 0, width: progressWidth, height: frame.height), cornerRadius: _cornerRadius)
             
-            if index <= progress {
-                color.setFill()
-            } else {
-                bgColor.setFill()
-            }
+            index <= progress ? color.setFill() : bgColor.setFill()
             
             xValue += progressWidth + stepsOffset
             
             path.fill()
         }
-        
+    }
+
+    // MARK: - Public API
+    open func previous() {
+        progress = max(0, progress - 1)
+    }
+    
+    open func next() {
+        progress = min(stepsCount, progress + 1)
     }
 }
